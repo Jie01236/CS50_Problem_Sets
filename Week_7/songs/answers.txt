@@ -1,0 +1,2 @@
+if the average of the value like 'loudness', and 'speechiness' is low, , the "audio aura" of the song might be characterized as calm and more melodic. It might evoke feelings of relaxation.
+We can add more attributes to the songs, such as R&B style, Rap style, and then when calculating the audio aura, we can also combine these averages
