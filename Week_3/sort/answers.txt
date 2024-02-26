@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: lowest in reversed text
+
+sort2 uses: merge sort
+
+How do you know?: most fast in random text
+
+sort3 uses: selection sort
+
+How do you know?: lowest in sorted text
