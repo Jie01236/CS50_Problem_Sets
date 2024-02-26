@@ -1,0 +1,94 @@
+#logo {
+    width: 600px;        /* 设置图片宽度为200像素 */
+    height: auto;        /* 保持图片的原始纵横比 */
+    opacity: 0.5;        /* 设置图片的透明度为50% */
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+    font-weight: bold;           /* 加粗 */
+    font-family: 'Courier New', monospace; /* 使用Pacifico字体，如果该字体不可用则使用默认的cursive字体 */
+}
+
+
+.aboutme{
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
+
+.aboutme p {
+    padding-left: 40px;   /* 添加到文本内容的左侧的内边距 */
+    padding-right: 40px;  /* 添加到文本内容的右侧的内边距 */
+    margin-left: 20px;   /* 添加到<p>标签左侧的外边距 */
+    margin-right: 20px;  /* 添加到<p>标签右侧的外边距 */
+}
+
+.navbar {
+    display:flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;    /* 这将使导航栏居中 */
+}
+
+.navbar ul {
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none; /* 去掉ul前面的小圆点 */
+    justify-content: center; /* 使列表项在水平方向上居中 */
+}
+
+.nav-link {
+    text-align: center;
+    text-decoration: none; /* 去掉链接默认的下划线 */
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+.modal-title {
+    font-weight: bold;
+    color: #444;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 50px auto;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+}
+
+#photo {
+    width: 300px;       
+    height: 300px;
+    opacity: 1;
+    padding: 40px 40px 40px 40px;
+    margin: 40px 40px 40px 40px;
+}

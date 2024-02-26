@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+HISTORY
+{% endblock %}
+
+{% block main %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">SYMBOL</th>
+        <th scope="col">SHARES</th>
+        <th scope="col">PRICE</th>
+        <th scope="col">DATE</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      {% for row in transactions%}
+      <tr>
+        <td>{{row["symbol"]}}</td>
+        <td>{{row["shares"]}}</td>
+        <td>{{usd_format(row["price"]) }}</td>
+        <td>{{row["date"] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

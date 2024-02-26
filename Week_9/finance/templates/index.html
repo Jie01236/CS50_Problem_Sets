@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block main %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">SYMBOL</th>
+        <th scope="col">SHARES</th>
+        <th scope="col">PRICE</th>
+        <th scope="col">TOTAL</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      {% for row in data%}
+      <tr>
+        <td>{{row["symbol"]}}</td>
+        <td>{{row["shares"]}}</td>
+        <td>{{ usd_format(row["price"]) }}</td>
+        <td>{{ usd_format(row["total"]) }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><h6>cash</h6></td>
+            <td>{{ usd_format(money) }}</td>
+        </tr>
+    </tfoot>
+  </table>
+
+</table>
+{% endblock %}
